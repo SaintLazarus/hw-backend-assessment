@@ -16,12 +16,12 @@ $sth->execute();
 print $q->header;
 
 print $q->start_html();
-print "<table style=\"border: 1px solid black;border-collapse: collapse;width: 100%;\">\n"; # manipulte to look like you want it
+print "<table style=\"border: 1px solid black;border-collapse: collapse;width: 100%;\">\n";
 print "<tr style=\"background-color: #97bbf4; color: #FFF;\"><th style=\"text-align: center;\">First Name</th><th style=\"text-align: center;\">Last Name</th><th style=\"text-align: center;\">Address1</th><th style=\"text-align: center;\">Address2</th><th style=\"text-align: center;\">City</th><th style=\"text-align: center;\">State</th><th style=\"text-align: center;\">Zip Code</th><th style=\"text-align: center;\">Country</th><th style=\"text-align: center;\">Date</th></tr>\n";
 
 my @ary;
 
-# read results of query, then clean up
+
 while (@ary = $sth->fetchrow_array ())
 {
     print "  <tr style=\"border: 1px solid black;\">\n";
