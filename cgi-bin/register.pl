@@ -8,7 +8,7 @@ use DBI;
 
 
 my $dsn = "DBI:mysql:registrants:localhost";
-my $dbh = DBI->connect($dsn,'akohag','Redwings4030', {RaiseError => 1, PrintError => 1}) or die "$DBI::errstr";
+my $dbh = DBI->connect($dsn,'********','********', {RaiseError => 1, PrintError => 1}) or die "$DBI::errstr";
 
 my $q = CGI->new;
 
